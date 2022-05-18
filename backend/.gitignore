@@ -1,0 +1,11 @@
+# Env files
+.env
+
+# Packages
+yarn.lock
+yarn-error.log
+packge-lock.json
+node_modules
+
+# Database
+*.db

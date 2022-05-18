@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev ./src/index.ts",
+    "prisma": "prisma",
+    "build": "tsc",
+    "deps": "yarn install && yarn run prisma generate",
+    "start:fresh": "yarn run deps && yarn run build && node ./dist/index.js",
+    "start": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "3.14.0",
+    "socket.io": "4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.33",
+    "@typescript-eslint/eslint-plugin": "5.25.0",
+    "@typescript-eslint/parser": "5.25.0",
+    "eslint": "8.15.0",
+    "prisma": "3.14.0",
+    "ts-node-dev": "1.1.8",
+    "typescript": "4.6.4"
+  }
+}
